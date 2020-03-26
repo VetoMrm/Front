@@ -1,0 +1,70 @@
+<mat-nav-list>
+    <div class="profile-card">
+        <img src="assets/profile.png" class="mt-2">
+        <div class="header">
+            <h3>Welcome To Admin</h3>
+            <h4>admin@email.com</h4>
+        </div>
+    </div>
+
+    <mat-divider></mat-divider>
+    <h2 matSubheader>Pages</h2>
+
+    <!-- <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/dashboard'>Dashboard</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/posts'>Posts</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/createTicket'>Create Ticket</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/createCompany'>Create Company</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/createUser'>Create User</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/companylist'>Company List</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/modifyUser'>Update / Delete User</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/modifyCompany'>Update / Delete Company</a> -->
+
+    <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/dashboard'>
+        <mat-icon>dashboard</mat-icon>Dashboard</a>
+    <div *ngIf="userName=='SuperAdmin'">
+        <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/createCompany'>
+            <mat-icon>create</mat-icon>Create Company</a>
+        <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/modifyCompany'>
+            <mat-icon>delete</mat-icon>Update / Delete Company</a>
+        <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/createUser'>
+            <mat-icon>supervisor_account</mat-icon>Create User</a>
+        <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/modifyUser'>
+            <mat-icon>delete_sweep</mat-icon>
+            Update / Delete User</a>
+    </div>
+    <div *ngIf="userName=='TicketAdmin'">
+        <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/createTicket'>
+            <mat-icon>record_voice_over</mat-icon>Create Ticket</a>
+    </div>
+    <div *ngIf="userName=='VetologicAdmin'">
+        <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/createUser'>
+            <mat-icon>supervisor_account</mat-icon>Create User</a>
+        <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/modifyUser'>
+            <mat-icon>delete_sweep</mat-icon>
+            Update / Delete User</a>
+        <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/createTicket'>
+            <mat-icon>record_voice_over</mat-icon>Create Ticket</a>
+    </div>
+    <div *ngIf="userName=='VetologicUser'">
+        <a mat-list-item routerLinkActive="list-item-active" routerLink='/default/createTicket'>
+            <mat-icon>record_voice_over</mat-icon>Create Ticket</a>
+    </div>
+
+
+
+
+
+    <!-- <mat-divider></mat-divider> -->
+
+    <!-- <h2 matSubheader> Tools</h2>
+   
+    <a mat-list-item routerLinkActive="list-item-active" routerLink='/'>
+    <mat-icon>import_contacts</mat-icon>
+    Contacts
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink='/'>
+        <mat-icon>contact_phone</mat-icon>
+        Leads
+    </a>
+    another menu -->
+</mat-nav-list>

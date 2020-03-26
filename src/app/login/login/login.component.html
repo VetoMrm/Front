@@ -1,0 +1,87 @@
+<!-- <div class="container-fluid" id="first">
+    <div>
+        <h1 class="text-center text-white">TICKET MANAGEMENT SYSTEM</h1>
+    </div>
+  <div class="card w-50 offset-3" id="loginCard">
+    <form action="/default" method="GET" class="form-group">
+        <div class="form-group col-8 offset-2" style="margin-top: 5rem;">
+          <label for="username" id="name">Username</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" id="lab" #name>
+        </div>
+        <div class="form-group col-8 offset-2">
+          <label for="exampleInputPassword1" id="name">Password</label>
+          <input type="password" class="form-control" id="lab" #password>
+        </div>
+        <button type="submit" class="btn btn-primary col-4 offset-4" (click)="valid(name.value,password.value)">LOGIN</button>
+        <button type="button" class="btn btn-warning col-4 offset-4 mt-2" >FORGOT PASSWORD?</button>
+      </form>   
+     </div>
+</div> -->
+
+
+<!--  
+<div class="container-fluid login-bg height" style="margin-top: 37px;">
+  <div>
+      <h1 class="text-bright text-center pt-3">Welcome To Service Desk System</h1>
+  </div>
+  <div class="w-50 bg-light mx-auto mt-5">     
+      <div class="card p-4">
+      <form action="/default" method="GET" class="form-group">
+          <h1 class="text-dark text-center sin "> Sign in</h1>
+          <div class="text-center">
+            <span *ngIf="invalid" style="color: red; text-align: center;">Invalid Credentials</span>
+          </div>
+          <input type="text"  id="username" placeholder="Enter Your Username"   class="form-control mt-3 p-4" #name>
+          <input type="password" id="password" placeholder="Enter Your Password"  class="form-control mt-3 p-4" #password autocomplete>
+          <button type="submit" class="form-control login-button mt-4 "><h5 style="padding-top: 4px;" (click)="valid(name.value,password.value)">Sign in </h5></button>
+          <button type="button" class="btn forgot col-4 offset-8 mt-2" style="color: black;" ><h5><a href="#">Forgot Password?</a></h5></button>
+        </form>
+      </div>
+  </div>
+</div> -->
+
+<div class="container-fluid login-bg height" style="margin-top: 20px;">
+    <div>
+        <h1 class="text-bright text-center pt-3">Welcome To Service Desk System</h1>
+    </div>
+</div>
+<div id="layoutAuthentication">
+    <div id="layoutAuthentication_content">
+        <main>
+            <div class="row offset-3">
+                <div class="col-8">
+                    <div class="card shadow-lg border-5 rounded-lg mt-2 car">
+                        <div class="card-header head">
+                            <h2 class="text-center font-weight-light ">LOGIN</h2>
+                        </div>
+                        <div class="card-body my-4">
+
+                            <form action="/default" method="GET" class="form-group">
+                                <div class="form-group">
+                                    <!-- <label class=" mb-1 font-weight-dark" for="username">Username</label> -->
+                                    <div class="text-center">
+                                        <span *ngIf="invalid" style="color: red; text-align: center;">Invalid Credentials</span>
+                                    </div>
+                                    <input class="form-control py-4" id="usern" type="text" placeholder="Enter your Username" #name required/>
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label class=" mb-1 font-weight-dark " for="Password">Password</label> -->
+                                    <input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter your password" #password autocomplete required /></div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" id="rememberPasswordCheck" type="checkbox" /><label class="custom-control-label" for="rememberPasswordCheck">Remember password</label></div>
+                                </div>
+                                <button type="submit" class="form-control login-button mt-4 " style="border-radius: 20px ;">
+                  <h5 style="padding-top: 4px;" (click)="valid(name.value,password.value)">Sign in </h5>
+                </button>
+                                <button type="button" class="btn forgot col-4 offset-8 mt-2">
+                  <h5 ><a href="#" style="color: black;">Forgot Password?</a></h5>
+                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<!-- (ngSubmit)="validate()" -->
